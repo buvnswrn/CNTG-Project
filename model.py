@@ -1,5 +1,5 @@
 import torch
-from transformers import T5Tokenizer, T5ForConditionalGeneration
+from transformers import AutoTokenizer, AutoModelWithLMHead
 from torch import optim
 import load_data
 from keras.datasets import imdb
@@ -11,8 +11,9 @@ from keras.preprocessing import sequence
 # -----------------------------
 
 # Huggingface Transformers taking the T5 base model.
-tokenizer = T5Tokenizer.from_pretrained("t5-base")
-model = T5ForConditionalGeneration.from_pretrained("t5-base")
+tokenizer = AutoTokenizer.from_pretrained("t5-base")
+
+model = AutoModelWithLMHead.from_pretrained("t5-base")
 
 # the following hyper parameter are task-specific
 max_source_length = 512
