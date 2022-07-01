@@ -1,4 +1,4 @@
-# CNTG-Project
+# Controllable Neural Text Generation -Project
    For pretraining procedure, run 
 -  Reconstruction_Model_Training.ipynb or use model from https://huggingface.co/buvnswrn/daml-t5-pretrain
 -  Copy the Discriminator model file from https://drive.google.com/file/d/1hNIdR8mestU-mpLEjYUq_aC0FkeVaTe7/view?usp=sharing and use it for training or use the code snippet provided in Final_Training.ipynb
